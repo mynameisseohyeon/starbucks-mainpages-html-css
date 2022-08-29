@@ -1,0 +1,830 @@
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    padding: 0;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+.blind{
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+}
+
+.center-align{ /* 가운데 정렬 */
+    margin: 0 auto;
+    width: 1280px;
+}
+
+/* reset */
+
+header{
+    height: 120px;
+    background: #f6f5ef;
+}
+
+#main-logo-img{ /* 스타벅스 로고이미지 */
+    width: 69px;
+    height: 71px;
+    background-image: url(./images/logo.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;
+    right: -48px;
+    bottom: -24px;
+    background-size: 68px;
+}
+
+#sub-pages{
+    position: relative;
+    right: -600px;
+    font-size: 14px;
+    top: -59px;
+    left: 666px;
+}
+
+#sub-pages span a{
+    padding-right: 22px;
+    text-decoration-line: none;
+    color: gray;
+}
+
+#sub-pages span a:hover{
+    text-decoration-line: underline;
+}
+
+#search{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: -84px;
+    right: -1130px;
+}
+
+#search-img{ /* 돋보기 이미지 */
+    background-image: url(./images/icon_magnifier_black.png);
+    width: 20px;
+    height: 23px;
+    display: inline-block;
+    background-size: 19px;
+    background-repeat: no-repeat;
+    bottom: -8px;
+    position: relative;
+    right: -8px;
+    z-index: 10;
+}
+
+#search-box{
+    background-color: white;
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+    top: 2px;
+    left: 0px;
+    position: absolute;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.blind{
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+}
+
+#main-menu{
+    display: inline-block;
+    position: relative;
+    width: 1280px;
+    top: -7px;
+}
+
+#main-menu>ul{
+    height: 56px;
+    width: 880px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -56px;
+    right: -454px;
+    display: inline-block;
+}
+
+#main-menu>ul>li{
+    display: inline-block;
+    height: 56.4px;
+    top: -2px;
+    position: absolute;
+    padding-top: 12px;
+}
+
+#main-menu>ul>li:hover{
+    background-color: #2C2A29;
+    color: #64a70b;
+}
+
+#main-menu h2{
+    list-style: none;
+    float: left;
+    padding: 0px 22px;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+}
+
+#main-menu h2:hover{
+    text-decoration-line: underline;
+}
+
+#gnb-sub-wrap{
+    height: 418px;
+    width: 1280px;
+    display: inline-block;
+    position: absolute;
+    top: 57px;
+    left: -452px;
+    background: #2C2A29;
+}
+
+#gnb-wrap{
+    position: relative;
+    display: inline-block;
+    width: 1280px;
+    height: 418px;
+    padding: 31px 77px;
+}
+
+#gnb-wrap ul{
+    width: 214px;
+    height: 198px;
+    display: inline-block;
+    float: left;
+    padding: 0;
+}
+
+#gnb-wrap li{
+    text-decoration: none;
+    display: inline-block;
+    width: 220px;
+    color: gray;
+    font-size: 12px;
+}
+
+#gnb-wrap span:hover{
+    text-decoration-line: underline;
+}
+
+#gnb-wrap li:hover{
+    text-decoration-line: underline;
+}
+
+#gnb-title span{
+    color: white;
+    font-size: 14px;
+    margin-bottom: 10px;
+    width: 220px;
+    height: 18px;
+    display: inline-block;
+}
+
+#gnb-nav01{
+    width: 91px;
+}
+
+/* #gnb-nav01:hover{
+    gnb-sub-wrap
+}
+ */
+
+#gnb-nav02{
+    width: 84px;
+    left: 91px;
+}
+
+#gnb-nav03{
+    width: 88px;
+    left: 175px;
+}
+
+#gnb-nav04{
+    width: 144px;
+    left: 263px;
+}
+
+#gnb-nav05{
+    width: 191px;
+    left: 407px;
+}
+
+#gnb-nav06{
+    width: 132px;
+    left: 598px;
+}
+
+/* header */
+
+main{
+    height: 3297px;
+}
+
+#special-menu-img{
+    height: 495px;
+    background-image: url(./images/main-menu-img.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}  /* main1 */
+
+#line-notice{
+    position: relative;
+    height: 62px;
+}
+
+#main-notice{
+    width: 50%;
+    height: 62px;
+    background-color: black;
+    display: inline-block;
+}
+
+#main-notice span{
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    display: inline-block;
+    left: 150px;
+    bottom: 20px;
+}  
+
+#promotion{
+    width: 50%;
+    height: 62px;
+    position: absolute;
+    display: inline-block;
+    float: left;
+}
+
+#promotion span{
+    font-size: 18px;
+    position: absolute;
+    display: inline-block;
+    left: 95px;
+    bottom: 20px;
+}  /* main2 */
+
+#new-reward{
+    height: 240px;
+    background-color: #1e3932;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    position: relative;
+}  
+
+#big-logo{
+    background-image: url(./images/rewards-logo.png);
+    background-size: 100%;
+    position: absolute;
+    display: inline-block;
+    width: 176px;
+    height: 152px;
+    top: 34px;
+    left: 98px;
+}
+
+#reward-explane{
+    width: 858px;
+    height: 180px;
+    font-size: 15px;
+    color: white;
+    position: relative;
+    display: inline-block;
+    top: 6px;
+    left: 305px;
+}
+
+#singin-plz{
+    border-bottom: 1px solid gray;
+    padding-bottom: 17px;
+}
+
+#reward-bt{
+    position: absolute;
+    display: inline-block;
+}
+
+#reward-bt a{
+    border-radius: 5px;
+    padding: 9px 17px;
+    text-decoration: none;
+    color: white;
+}
+
+#reward-bt a:hover{
+    text-decoration-line: underline ;
+}
+
+#signin-bt{
+    background-color: #00704a;
+    border: 2px solid #00704a;
+    top: 45px;
+    display: inline-block;
+    position: relative;
+    left: 110px;
+}
+
+#login-bt{
+    border: 2px solid #fff;
+    display: inline-block;
+    position: relative;
+    top: 45px;
+    left: 115px;
+}
+
+#gift-card-bt{
+    border: 2px solid #fff;
+    display: inline-block;
+    position: relative;
+    top: 130px;
+    right: 83px;
+}
+/* main3 */
+
+#main-been-wrap{
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+
+#been-background-img{
+    background-image: url(./images/2022_Summer2_bean_bg.jpg);
+    height: 500px;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: -286px 0px;
+}
+
+#coffe-been-img{
+    background-image: url(./images/2022_Summer2_bean_bean_02.png);
+    width: 165px;
+    height: 340px;
+    background-size: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 87px;
+    left: 270px;
+}
+
+#coffee-been-instruction{
+    background-image: url(./images/2022_Summer2_bean_text.png);
+    width: 324px;
+    height: 120px;
+    display: inline-block;
+    top: -350px;
+    position: relative;
+    right: -800px;
+}  
+
+#been-bt a{
+    color: white;
+    display: inline-block;
+    position: absolute;
+    text-decoration: none;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    top: 320px;
+    right: 345px;
+    padding: 9px 21px;
+    text-align: center;
+}
+
+#been-bt a:hover{
+    text-decoration-line: underline;
+    background-color: #fff;
+    color: #00704a;
+}
+/* main4 */
+
+#reserve{
+    height: 400px;
+    width: 100%;
+    position: relative;
+}
+
+#reserve-main-img{
+    background-image: url(./images/reserve_2022_indonesia_visual3.png);
+    width: 1280px;
+    height: 400px;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: -329px 4px;
+}
+
+#reserve-title-img{
+    background-image: url(./images/reserve_2022_indonesia_title.png);
+    background-repeat: no-repeat;
+    width: 496px;
+    height: 115px;
+    position: relative;
+    top: 110px;
+    left: 60px;
+    display: inline-block;
+}
+
+#reserve-background-img{
+    background-image: url(./images/reserve_2022_indonesia_visual_bg.jpg);
+    height: 400px;
+    width: 1280px;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+}  
+
+#reserve-bt a{
+    color: #b9813e;
+    display: inline-block;
+    position: absolute;
+    text-decoration: none;
+    border: 3px solid #b9813e;
+    border-radius: 5px;
+    top: 270px;
+    left: 310px;
+    padding: 9px 21px;
+    text-align: center;
+}
+
+#reserve-bt a:hover{
+    text-decoration-line: underline;
+    color: white;
+    background-color: #b9813e;
+}
+/* main5 */
+
+#favorite-pick{
+    height: 800px;
+    position: relative;
+}
+
+#pick-background-img{
+    background-image: url(./images/fav_prod_bg_new.jpg);
+    height: 800px;
+    background-size: 180%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: -640px -160px;
+    z-index: -1;
+}
+
+#pick-title-img{
+    background-image: url(./images/fav_prod_txt01.png);
+    width: 258px;
+    height: 204px;
+    display: inline-block;
+    position: absolute;
+    bottom: 470px;
+    left: 150px;
+}
+
+#pick-explain-img{
+    background-image: url(./images/fav_prod_txt02.png);
+    width: 362px;
+    height: 156px;
+    display: inline-block;
+    position: absolute;
+    bottom: 270px;
+    left: 50px;
+}
+
+#fav-pictures{
+    background-image: url(./images/2022_Summer2_pick_img.png);
+    background-size: 100%;
+    width: 612px;
+    height: 411px;
+    display: inline-block;
+    position: absolute;
+    bottom: 325px;
+    left: 512px;
+}  
+
+#fav-pick-bt a{
+    color: white;
+    display: inline-block;
+    position: absolute;
+    text-decoration: none;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    top: 580px;
+    left: 270px;
+    padding: 9px 21px;
+    text-align: center;
+}
+
+#fav-pick-bt a:hover{
+    color: #666;
+    text-decoration-line: underline;
+    background-color: white;
+}
+/* main6 */
+
+#reserve-magazine{
+    height: 400px;
+    position: relative;
+}
+
+#magazine-background-img{
+    background-image: url(./images/reserve_bg_pc.png);
+    background-repeat: no-repeat;
+    background-position: -337px 58px;
+    height: 400px;
+    z-index: -1;
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+}
+
+#magazine-title-img{
+    background-image: url(./images/reserve_text_pc_220120.png);
+    width: 588px;
+    height: 97px;
+    display: inline-block;
+    position: absolute;
+    left: 100px;
+    bottom: 170px;
+}
+
+#magazine-main-img{
+    background-image: url(./images/reserve_visual_pc_220119.png);
+    width: 348px;
+    height: 374px;
+    display: inline-block;
+    position: absolute;
+    right: 100px;
+}
+
+#magazine-bt a{
+    color: black;
+    display: inline-block;
+    position: absolute;
+    text-decoration: none;
+    border: 3px solid #000;
+    border-radius: 5px;
+    top: 275px;
+    left: 400px;
+    padding: 9px 21px;
+    text-align: center;
+}
+
+#magazine-bt a:hover{
+    color: white;
+    background-color: black;
+    text-decoration-line: underline;
+}
+/* main7 */
+
+#pickup-service{
+    height: 400px;
+    position: relative;
+}
+
+#pickup-background-img{
+    background-image: url(./images/store_bg.jpg);
+    height: 400px;
+} 
+
+/* #pickup-coffee-img{
+    background-image: url(./images/store_exp_img03.png);
+    position: absolute;
+    display: inline-block;
+    width: 343px;
+    height: 142px;
+    top: -58px;
+    right: 460px;
+} */
+
+#pickup-facility-img{
+    background-image: url(./images/store_exp_img04.png);
+    position: absolute;
+    display: inline-block;
+    width: 230px;
+    height: 102px;
+    top: 300px;
+    right: 66px;
+}
+
+#pickup-starbuck01{
+    background-image: url(./images/store_exp_img01.png);
+    position: absolute;
+    display: inline-block;
+    width: 228px;
+    height: 228px;
+    top: 140px;
+    left: 340px;
+    z-index: 10;
+}
+
+#pickup-starbuck02{
+    background-image: url(./images/store_exp_img02.png);
+    position: absolute;
+    display: inline-block;
+    width: 366px;
+    height: 312px;
+    top: 1px;
+    left: 80px;
+}
+
+#pickup-title01{
+    background-image: url(./images/store_txt01.png);
+    position: absolute;
+    display: inline-block;
+    width: 385px;
+    height: 54px;
+    top: 110px;
+    right: 200px;
+}
+
+#pickup-title02{
+    background-image: url(./images/store_txt02.png);
+    position: absolute;
+    display: inline-block;
+    width: 366px;
+    height: 61px;
+    top: 190px;
+    right: 220px;
+}
+
+#find-branch-bt a{
+    color: black;
+    display: inline-block;
+    position: absolute;
+    text-decoration: none;
+    border: 3px solid #000;
+    border-radius: 5px;
+    top: 280px;
+    right: 465px;
+    padding: 9px 21px;
+    text-align: center;
+}
+
+#find-branch-bt a:hover{
+    color: white;
+    background-color: #000;
+    text-decoration-line: underline;
+}
+
+
+/* main8 */
+
+/* main */
+
+footer{
+    height: 700px;
+    background: #2C2A29;
+    position: relative;
+}
+
+#footer-ad{
+    width: 1280px;
+    height: 700px;
+    position: relative;
+}
+
+#company-branch{
+    width: 1280px;
+    height: 390px;
+    padding: 30px 200px;
+    background-image: url(./images/footer_logo.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-position: 1080px 58px;
+    background-size: 16px;
+}
+
+#company-branch span:hover{
+    text-decoration-line: underline;
+}
+
+#company-branch li:hover{
+    text-decoration-line: underline;
+}
+
+#footer-title span{
+    font-size: 15px;
+    padding-bottom: 15px;
+    display: inline-block;
+}
+
+#company-branch ul{
+    position: relative;
+    display: inline-block;
+    width: 293px;
+    height: 200px;
+    color: white;
+    float: left;
+    margin: 0;
+}
+
+#company-branch li{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    width: 198px;
+    padding-bottom: 2px;
+}/* footer 1 */
+
+#comapny-price{
+    width: 1280px;
+    height: 80px;
+    background: #282828;
+    margin-bottom: 10px;
+}/* footer 2 */
+
+#company-explain{
+    width: 1280px;
+    height: 230px;
+    position: relative;
+    color: #ccc;
+}
+
+#company-terms{
+    position: absolute;
+    display: inline-block;
+    float: left;
+    width: 1280px;
+    margin: 0;
+    top: 0px;
+    right: 0px;
+    padding: 0px 125px;
+    text-align: center;
+}
+
+#company-terms li{
+    display: inline-block;
+    font-size: 12px;
+    padding-right: 7px;
+}
+
+#starbucks-manage{
+    position: absolute;
+    display: inline-block;
+    top: 50px;
+    width: 1280px;
+    padding: 0px 400px;
+    text-align: center;
+}
+
+#starbucks-manage a{
+    color: #fff;
+    text-decoration: none;
+    padding: 9px 17px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 0px 3px;
+}
+
+#starbucks-manage a:hover{
+    text-decoration-line: underline ;
+}
+
+#starbucks-contact{
+    position: absolute;
+    display: inline-block;
+    margin: 0;
+    width: 1280px;
+    top: 102px;
+    padding: 0px 219px;
+    text-align: center;
+}
+
+#starbucks-contact li{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11px;
+    padding-right: 12px;
+}
+
+#company-explain span{
+    position: absolute;
+    display: inline-block;
+    width: 1280px;
+    font-size: 12px;
+    padding: 0px 464px;
+    top: 142px;
+}/* footer 3 */
+
+/* footer */
